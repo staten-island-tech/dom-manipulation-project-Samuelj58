@@ -1,0 +1,13 @@
+html, body * 
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+  text-align: left;
+  font-size: 3vw;  
+}
+h2{
+    font-size: 80%;
+}

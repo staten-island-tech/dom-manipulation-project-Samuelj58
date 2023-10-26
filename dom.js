@@ -1,8 +1,8 @@
-const form = document.querySelector("#form")
+/* const form = document.querySelector("#poster")
 const DOMSelectors = {
-    form: document.querySelector("#form"),
-    firstName:document.querySelector(".first-name"),
-    h2s:document.querySelectorAll("h2"), 
+    form: document.querySelector("#poster"),
+    n:document.querySelector(".first-name"),
+    label:document.querySelectorAll("label"), 
     //select the textbox
     //select all the h2s in one property
 };
@@ -11,4 +11,8 @@ DOMSelectors.form.addEventListener("submit", function(event){
     console.log(DOMSelectors.firstName.value);
     DOMSelectors.h2s.forEach((el)=> (el.textContent.value));
 }
-);
+); */
+
+const DOMSelectors = {
+    form: document.querySelector("poster")
+}
