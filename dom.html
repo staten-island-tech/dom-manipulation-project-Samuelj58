@@ -1,27 +1,27 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dom.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dom.css" />
     <title>Dom Manipulator Proj</title>
-</head>
-<body>
-    <h1>Make your own Poster</h1>
-    <form action="" id= "poster">
+  </head>
+  <body>
+    <h1>Caption an Image</h1>
+    <form action="" id="poster">
+      <h2>Name of Poster</h2>
+      <input type="text" name="Type poster name" id="pname" />
 
-        <h2>Name of Poster</h2>
-        <input type="text" name="Type poster name" id="">
-    
-        <h2>Your Name</h2>
-        <input type="text" name="Type your name" id="">
-    
-        <h2>Img Link</h2>
-        <input type="text" name="insert Link" id="">
-    <br>
-        <input type="submit" value="Enter">
+      <h2>Your Name</h2>
+      <input type="text" name="Type your name" id="yname" />
+
+      <h2>Img Link</h2>
+      <input type="text" name="insert Link" id="link" />
+      <br />
+      <input type="submit" value="Enter" />
     </form>
 
-    <script scr = "dom.js"></script>
-</body>
-</html>
+    <div id="cards"></div>
 
+    <script src="dom.js"></script>
+  </body>
+</html>

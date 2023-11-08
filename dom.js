@@ -1,18 +1,38 @@
-/* const form = document.querySelector("#poster")
 const DOMSelectors = {
-    form: document.querySelector("#poster"),
-    n:document.querySelector(".first-name"),
-    label:document.querySelectorAll("label"), 
-    //select the textbox
-    //select all the h2s in one property
+  form: document.querySelector("#poster"),
+  pname: document.querySelector("#pname"),
+  yname: document.querySelector("#yname"),
+  link: document.querySelector("#link"),
+  cards: document.querySelector("#cards"),
 };
-DOMSelectors.form.addEventListener("submit", function(event){
-    event.preventDefault();
-    console.log(DOMSelectors.firstName.value);
-    DOMSelectors.h2s.forEach((el)=> (el.textContent.value));
+//get values to stay
+DOMSelectors.form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  makeposter();
+  clear();
+});
+//collect values and display it
+//beforeend = insert inside the element, after its last child.
+function makeposter() {
+  const cardHTML = `
+      <div class="card">
+        <h3>Name of Poster: ${DOMSelectors.pname.value}</h3>
+        <h3>Your Name: ${DOMSelectors.yname.value}</h3>
+        <img src="${DOMSelectors.link.value}" alt="Image">
+        <button class="clear" onclick="clr(this)">Clear</button>
+      </div>
+    `;
+  DOMSelectors.cards.insertAdjacentHTML("beforeend", cardHTML);
 }
-); */
+//clear text after typing it
+function clear() {
+  DOMSelectors.pname.value = "";
+  DOMSelectors.yname.value = "";
+  DOMSelectors.link.value = "";
+}
+//delete function
+function clr(remove) {
+    remove.parentElement.remove();
+    }
 
-const DOMSelectors = {
-    form: document.querySelector("poster")
-}
+
